@@ -1,5 +1,5 @@
 window.onload=function(){
-	//document.getElementsByClassName；
+	
 	if(!document.getElementsByClassName){
 		document.getElementsByClassName=function(cls){
 			var ret=[];
@@ -16,7 +16,7 @@ window.onload=function(){
 		}
 	}
 	var cartTable=document.getElementById('cartTable');
-	var tr=cartTable.children[1].rows; 
+	var tr=cartTable.children[1].rows; //children;
 	var checkInputs=document.getElementsByClassName('check');
 	var checkAllInput=document.getElementsByClassName('check-all');
 	var selectedTotal=document.getElementById('selectedTotal');
@@ -31,7 +31,7 @@ window.onload=function(){
 	
 	for (var i = 0; i < checkInputs.length; i++) {
 		checkInputs[i].onclick=function(){
-			if (this.className==='check-all check') { ；
+			if (this.className==='check-all check') { 
 				for(var j=0;j<checkInputs.length;j++){
 					checkInputs[j].checked=this.checked;
 				}
@@ -84,7 +84,7 @@ window.onload=function(){
 		}
 	}
 
-	
+	//
 	selected.onclick=function(){
 		if(cartFooter.className=='cartFooter'){
 			if(selectedTotal.innerHTML!=0){
