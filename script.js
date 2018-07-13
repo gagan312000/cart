@@ -70,7 +70,7 @@ window.onload=function(){
 				tr[i].className="on";
 				selected+=parseInt( tr[i].getElementsByTagName('input')[1].value);
 				price+=parseFloat( tr[i].cells[4].innerHTML );
-				HTMLstr+='<div><img src="'+tr[i].getElementsByTagName('img')[0].src+'"/><span class="selCount">'+perCount+'</span><span class="del" index="'+i+'">delet</span></div>'
+				HTMLstr+='<div><img src="'+tr[i].getElementsByTagName('img')[0].src+'"/><span class="selCount">'+perCount+'</span><span class="del" index="'+i+'">delete</span></div>'
 			}else{
 				tr[i].className=" ";
 			}
